@@ -1,6 +1,8 @@
 # action.yml
 name: 'Hello World'
 description: 'Greet someone and record the time'
+env:
+  DOCKER_BUILDKIT: 1
 inputs:
   who-to-greet:  # id of input
     description: 'Who to greet'
