@@ -19,6 +19,7 @@ run: build
 		--tty \
 		--rm \
 		--env GITHUB_OUTPUT=/tmp/GITHUB_OUTPUT \
+		--env GITHUB_WORKSPACE=/github/workspace \
 		"$(NAME)" \
 		1.3.7
 
@@ -28,6 +29,7 @@ shell: build
 		--tty \
 		--rm \
 		--env GITHUB_OUTPUT=/tmp/GITHUB_OUTPUT \
+		--env GITHUB_WORKSPACE=/github/workspace \
 		--entrypoint "" \
 		"$(NAME)" \
 		/bin/sh

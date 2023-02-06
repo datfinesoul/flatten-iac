@@ -1,0 +1,78 @@
+{
+  "root_module": {
+    "resources": [
+      {
+        "address": "random_string.this[\"1\"]",
+        "mode": "managed",
+        "type": "random_string",
+        "name": "this",
+        "index": "1",
+        "provider_name": "registry.terraform.io/hashicorp/random",
+        "schema_version": 2,
+        "values": {
+          "keepers": null,
+          "length": 4,
+          "lower": true,
+          "min_lower": 0,
+          "min_numeric": 0,
+          "min_special": 0,
+          "min_upper": 0,
+          "number": true,
+          "numeric": true,
+          "override_special": null,
+          "special": false,
+          "upper": false
+        },
+        "sensitive_values": {}
+      },
+      {
+        "address": "random_string.this[\"2\"]",
+        "mode": "managed",
+        "type": "random_string",
+        "name": "this",
+        "index": "2",
+        "provider_name": "registry.terraform.io/hashicorp/random",
+        "schema_version": 2,
+        "values": {
+          "keepers": null,
+          "length": 4,
+          "lower": true,
+          "min_lower": 0,
+          "min_numeric": 0,
+          "min_special": 0,
+          "min_upper": 0,
+          "number": true,
+          "numeric": true,
+          "override_special": null,
+          "special": false,
+          "upper": false
+        },
+        "sensitive_values": {}
+      },
+      {
+        "address": "random_string.this[\"3\"]",
+        "mode": "managed",
+        "type": "random_string",
+        "name": "this",
+        "index": "3",
+        "provider_name": "registry.terraform.io/hashicorp/random",
+        "schema_version": 2,
+        "values": {
+          "keepers": null,
+          "length": 4,
+          "lower": true,
+          "min_lower": 0,
+          "min_numeric": 0,
+          "min_special": 0,
+          "min_upper": 0,
+          "number": true,
+          "numeric": true,
+          "override_special": null,
+          "special": false,
+          "upper": false
+        },
+        "sensitive_values": {}
+      }
+    ]
+  }
+}

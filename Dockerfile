@@ -1,10 +1,15 @@
 # Container image that runs your code
-FROM alpine:3.10
+FROM alpine:3.17
+
+RUN apk add \
+  vim \
+	nodejs \
+	npm \
+	jq
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
-#RUN apk add \
-#  vim
+COPY sample-hcl/ /sample-hcl
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
 ENTRYPOINT ["/entrypoint.sh"]
@@ -24,3 +29,5 @@ ENTRYPOINT ["/entrypoint.sh"]
 
 # BUG
 # https://github.com/nektos/act/issues/1594
+
+# https://docs.github.com/en/actions/using-workflows/workflow-commands-for-github-actions#multiline-strings
