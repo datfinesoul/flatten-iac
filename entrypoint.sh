@@ -4,6 +4,8 @@ set -eu
 TERRAFORM_VERSION="${1}"
 
 ARCHITECTURE="amd64"
+echo $0
+
 cd /tmp
 wget \
 	--quiet \
@@ -14,11 +16,10 @@ wget \
 unzip terraform_*.zip
 mv "terraform" "/usr/local/bin/terraform"
 terraform version
-
 cd -
 
 echo 'test<<EOF' >> $GITHUB_OUTPUT
-cat entrypoint.sh >> $GITHUB_OUTPUT
+cat $0 >> $GITHUB_OUTPUT
 echo 'EOF' >> $GITHUB_OUTPUT
 #echo "Hello $1"
 #time=$(date)

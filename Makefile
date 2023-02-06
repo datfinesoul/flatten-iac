@@ -19,7 +19,8 @@ run: build
 		--tty \
 		--rm \
 		--env GITHUB_OUTPUT=/tmp/GITHUB_OUTPUT \
-		"$(NAME)"
+		"$(NAME)" \
+		1.3.7
 
 shell: build
 	docker run \
