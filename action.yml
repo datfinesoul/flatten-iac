@@ -1,10 +1,8 @@
 # action.yml
-name: 'Hello World'
-description: 'Greet someone and record the time'
-env:
-  DOCKER_BUILDKIT: 1
+name: Flatten Terraform
+description: Flatten Terraform and save the HCL
 inputs:
-  who-to-greet:  # id of input
+  terraform_version:  # id of input
     description: 'Who to greet'
     required: true
     default: 'World'
@@ -15,4 +13,4 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.who-to-greet }}
+    - ${{ inputs.terraform_version }}

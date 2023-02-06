@@ -1,14 +1,10 @@
-# syntax=docker/dockerfile:1.3-labs
-
 # Container image that runs your code
 FROM alpine:3.10
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
-ARG BUILDARCH
-RUN <<DOC
-echo aaa $BUILDARCH
-DOC
+#RUN apk add \
+#  vim
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
 ENTRYPOINT ["/entrypoint.sh"]

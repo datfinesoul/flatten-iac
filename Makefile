@@ -7,10 +7,7 @@ main:
 	@>&2 echo "no supported default option"; false
 
 build:
-	# https://www.docker.com/blog/introduction-to-heredocs-in-dockerfiles/
-	# https://www.stereolabs.com/docs/docker/building-arm-container-on-x86/
-	DOCKER_BUILDKIT=1 \
-		docker build \
+	docker build \
 		--file "Dockerfile" \
 		--tag "$(LABEL)" \
 		--progress=plain \
