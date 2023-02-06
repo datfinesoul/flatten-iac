@@ -3,12 +3,12 @@ name: Flatten Terraform
 description: Flatten Terraform and save the HCL
 inputs:
   terraform_version:  # id of input
-    description: 'Who to greet'
+    description: 'The version of Terraform to use'
     required: true
-    default: 'World'
+    default: '1.3.7'
 outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  test: # id of output
+    description: 'eventually the HCL'
 runs:
   using: 'docker'
   image: 'Dockerfile'
